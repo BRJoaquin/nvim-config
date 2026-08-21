@@ -1,0 +1,7 @@
+{
+  "Function Definition": {
+    "prefix": "defn",
+    "body": ["def ${1:function_name}(${2:args}):", "    ${0:pass}"],
+    "description": "Define a Python function"
+  }
+}

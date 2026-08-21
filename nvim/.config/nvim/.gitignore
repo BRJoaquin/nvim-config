@@ -1,0 +1,10 @@
+# Test / scratch artifacts
+tt.*
+.tests
+.repro
+foo.*
+*.log
+doc/tags
+
+# Note: nvim-pack-lock.json is intentionally NOT ignored — commit it to pin
+# plugin revisions across machines.

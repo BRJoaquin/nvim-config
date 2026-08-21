@@ -94,6 +94,25 @@ the formatters/linters that aren't LSP servers:
 :MasonInstall prettierd stylua shfmt clang-format shellcheck
 ```
 
+### WSL notes
+
+Under WSL the Ubuntu steps above apply unchanged (use the x86_64 tarball).
+Only two things differ:
+
+- **Clipboard** — on Windows 11, WSLg provides an X server so `xclip` just
+  works. On Windows 10 (no WSLg), install
+  [win32yank](https://github.com/equalsraf/win32yank/releases) somewhere on
+  your PATH instead; Neovim auto-detects it:
+
+  ```sh
+  curl -sLO https://github.com/equalsraf/win32yank/releases/latest/download/win32yank-x64.zip
+  unzip -p win32yank-x64.zip win32yank.exe > ~/.local/bin/win32yank.exe
+  chmod +x ~/.local/bin/win32yank.exe
+  ```
+
+- **Nerd Font** — install the font on *Windows* and set it as the font in
+  Windows Terminal (Settings → your Ubuntu profile → Appearance).
+
 ### 5. Nice-to-haves
 
 - A **Nerd Font** for icons (e.g. [JetBrainsMono Nerd Font](https://www.nerdfonts.com/font-downloads)),
